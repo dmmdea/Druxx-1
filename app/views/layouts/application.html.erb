@@ -5,12 +5,35 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+
+      function initialize() {
+
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.	LatLng(4.641199, -74.069953),
+          icon: img,
+          zoom: 16	,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+
+        }	
+        var img = new google.maps.MarkerImage("assets/images/market.png");
+        var map = new google.maps.Map(map_canvas, map_options)
+
+
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+   </script>
+
 </head>
 <body>
 <div class="container">
 	
 	<%= render 'layouts/navbar' %>
 	<%= yield %>
+	<%= render 'layouts/footer' %>
 
 </div>
 </body>

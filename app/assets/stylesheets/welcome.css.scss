@@ -1,3 +1,73 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	background-color: rgb( 226,223,154 );
+}
+.container{
+
+	width: 1024px; 
+	margin: 0 auto 0 auto;
+}
+
+.nav{ 
+	background-color: rgb(197,180,117);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+.nav a{
+	text-decoration: none;
+	color: rgb(192,192,192);
+}
+
+//------
+//-INDEX
+//------
+.left{
+	float: left;
+	width: 50%;
+	margin: 0 auto 0 auto;
+}
+
+.right{
+	float: right;
+	width: 50%;
+	margin: 0 auto 0 auto;
+}
+
+.que-vendemos{
+	margin-top: 48px;
+	margin: 0 auto 0 auto;
+}
+
+.donde-estamos{
+	margin-top: 48px;
+	margin: 0 auto 0 auto;
+}
+
+.empresa{
+	margin-top: 48px;
+	margin: 0 auto 0 auto;
+}
+.contacto{
+	width: 400px;
+	margin: 0 auto 0 auto;
+}
+
+#map_canvas {
+    width: 70%;
+    height: 300px;
+    margin: 0 auto 0 auto;
+}
+
+.mapas{
+    margin: 0 auto 0 auto;
+    width: 1024px;
+}
+
+.direcciones{
+	float: left;
+	width: 30%;
+}
